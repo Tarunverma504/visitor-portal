@@ -49,6 +49,6 @@ app.get('/resu',(req,res)=>{
 
 
 
-app.listen(process.env.PORT || 2323,()=>{
+app.listen( process.env.PORT || 2323,()=>{
     console.log("Server Running at port 2323");
 })
