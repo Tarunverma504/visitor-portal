@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="Stylesheet" href="./css/enqury.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+<nav class="nav">
+    <form action="/" method="GET" class="home"><button type="submit" style="text-decoration: none; background-color: transparent;color:white;outline:none;border:none;font-size:3rem""><i class="fas fa-home"></i></button></form>
+    <form action="/getData" method="GET" class=" equry_date">
+        <div class="input-group">
+            <div class="form-outline">
+              <input type="date" id="form1" name="date" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+    </form>
+    
+</nav>
+<h2 style="text-align: center; color:white" >Data of Date:- "<%= date %>" </h2>
+    
+<table>
+    <tr>
+        <th style="background-color: aqua; color:black"> Visitor Name</th>
+        <th style="background-color: rgb(250, 173, 31); color:black">Phone</th>
+        <th style="background-color: rgb(216, 216, 27); color:black">email</th>
+        <th style="background-color: green; color:black">CheckIn Time</th>
+        <th style="background-color: rgb(209, 13, 13); color:black">CheckOut Time</th>
+        <th >Purpose Of Visit</th>
+    </tr>
+    <% for(let data of response){%>
+        <tr>
+            <td class="name"><%= data.username %></td>
+            <td class="phone"><%= data.phone %></td>
+            <td class="email"><%= data.email %></td>
+            <td class="checkin"><%= data.checkIn_Time %></td></td>
+            <td class="checkout"><%= data.checkOut_Time %></td></td>
+            <td><%= data.purpose %></td></td>
+        </tr>
+    <% }%>
+    
+    
+</table>
+
+
+
+
+
+<%- include("./partials/footer")   %>

@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #121312;
+}
+.outer_div{
+    /* background-color: red; */
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:7rem;
+}
+.inner_div1{
+    width:45%;
+    height:auto;
+}
+.inner_div1 img{
+    width:100%;
+}
+.inner_div2{
+    width:55%;
+}
+.portal{
+    width:500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+.portal h1{
+    font-size: 4rem;
+    color:white;
+}
+.btn{
+    border-radius: 20px;
+    width:200px;
+    margin: 20px;
+    transition:1s;
+
+}
+.btn1{
+    background-color:yellow;
+    border: 2px solid yellow;
+}
+.btn1:hover {
+    background-color:transparent;
+    border: 2px solid white;
+    color:yellow;
+}
+.btn2{
+    background-color:rgb(32, 204, 32);
+    border: 2px solid rgb(32, 204, 32);
+}
+.btn2:hover {
+    background-color:transparent;
+    border: 2px solid white;
+    color:rgb(32, 204, 32);
+}
+.btn3{
+    background-color:rgb(247, 35, 35);
+    border: 2px solid rgb(247, 35, 35);
+}
+.btn3:hover {
+    background-color:transparent;
+    border: 2px solid white;
+    color:rgb(247, 35, 35);
+}
+@media screen and (max-width:900px){
+    .portal{
+        width:250px;
+        margin-top: 2rem;
+    }
+    .portal h1{
+        font-size: 3rem;
+    }
+    .inner_div1{
+        /* background-color: red; */
+        width:50%;
+        height:auto;
+    }
+    .inner_div1 img{
+        margin-top: 5rem;
+        width:100%;
+    }
+    .inner_div2{
+        /* background-color: green; */
+        width:50%;
+    }
+
+}
+@media screen and (max-width:720px) {
+    .outer_div{
+        flex-direction: column;
+        justify-content: space-evenly;
+        position:  static;
+        padding-top:2rem;
+    }
+    .inner_div1{ width:80%; }
+    .inner_div2{ width:100%; }
+    .portal{
+        width:500px;
+        margin: auto;
+        margin-top: 0rem;
+    }
+    .portal h1{ font-size: 4rem; }
+}
+@media screen and (max-width:500px){
+    .outer_div{
+        padding-top:2rem;
+    }
+    .inner_div1{
+        width:100%;
+        min-width:300px;
+        margin: auto;
+    }
+    .inner_div1 img{ width:100%; }
+    .inner_div2{ width:100%; }
+    .portal{
+        width:250px;
+        margin-top: 0rem;
+    }
+    .portal h1{ font-size: 3rem;}
+}

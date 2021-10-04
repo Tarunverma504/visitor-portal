@@ -1,0 +1,80 @@
+table{
+    width:100%;
+    color:white;
+    text-align: center;
+    
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #121312;
+}
+
+table,td,th{
+    border: 1px solid grey;
+    padding: 2px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.checkin{
+    color:green;
+}
+
+.checkout{
+    color:red;
+}
+.email{
+    color:yellow;
+}
+.name{
+    color:cyan;
+}
+.phone{
+    color: rgb(250, 173, 31);
+}
+
+
+
+
+.err_outer{
+    width:480px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding:20px;
+    border-radius: 30px;
+    text-align: center;
+
+    
+}
+/* .otp_container h3{ text-align: center;}
+.otp_container form{ margin-top:20px;text-align:center;}
+.otp_container form input{
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    width:200px;
+    text-align: center;
+    outline: none;
+} */
+
+
+
+
+@media screen and (max-width:500px){
+    .err_outer{
+        top: 45%;
+        width:250px;
+    }
+}

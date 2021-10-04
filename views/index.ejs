@@ -1,0 +1,21 @@
+<%- include("./partials/header")   %>
+<nav>
+    <form action="/" method="GET"><button type="submit" style="text-decoration: none; background-color: transparent;color:white;outline:none;border:none;font-size:3rem""><i class="fas fa-home"></i></button></form>
+    <!-- <a href= style="color:white;font-size:4rem"></a> -->
+</nav>
+    <div class='outer_div'>
+        <div class="inner_div1">
+            <img src="./images/portal.svg">
+        </div>
+        <div class="inner_div2">\
+            <div class="portal">
+                <h1> Visitor <span style="color:#6C63FF">Portal</span></h1>
+                <div class="options_btn">
+                    <form action="/Checkin"><button class="btn btn1" type="submit">CheckIn</button></form>
+                    <form action="/Checkout"><button class="btn btn2" type="submit">CheckOut</button></form>
+                    <form action="/Enqury"><button class="btn btn3">Enqry</button></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("./partials/footer")   %>
