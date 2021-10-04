@@ -39,13 +39,6 @@ app.use((req, res, next) => {
 
 app.use(portalRoutes);
 
-app.get('/abc',(req,res)=>{
-    req.flash("msg1","tarun");
-    res.send("hello");
-})
-app.get('/resu',(req,res)=>{
-    res.send(req.flash('msg1'));
-})
 
 
 
